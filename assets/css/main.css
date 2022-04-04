@@ -161,12 +161,15 @@ input, select, textarea {
 		-ms-transition: color 0.2s ease, border-bottom 0.2s ease;
 		transition: color 0.2s ease, border-bottom 0.2s ease;
 		text-decoration: none;
-		border-bottom: dotted 1px;
 		color: inherit;
 	}
 
 		a:hover {
 			border-bottom-color: transparent;
+			text-decoration: none;
+		}
+		a:link {
+			text-decoration: none;
 		}
 
 	strong, b {
@@ -308,6 +311,10 @@ input, select, textarea {
 
 	a:hover {
 		color: #ffffff;
+		text-decoration: none;
+	}
+	a:link {
+		text-decoration: none;
 	}
 
 	strong, b {
@@ -2820,6 +2827,10 @@ input, select, textarea {
 			padding: 0;
 		}
 
+			.features li div.columns {
+				float: left;
+			}
+
 			.features li:nth-child(1), .features li:nth-child(2), .features li:nth-child(3) {
 				margin-top: 0;
 			}
@@ -3084,6 +3095,14 @@ input, select, textarea {
 			font-size: 1.25em;
 			letter-spacing: -0.025em;
 		}
+		
+		#header div {
+			display: flex;
+			justify-content: space-between;
+			max-width: 150px;
+			margin: 0 auto;
+			padding: 10px;
+		}
 
 		#header.alt {
 			padding: 7em 5em 4em 5em ;
@@ -3103,6 +3122,7 @@ input, select, textarea {
 				-ms-transition-delay: 0.5s;
 				transition-delay: 0.5s;
 				opacity: 1;
+				text-decoration: none;
 			}
 
 			#header.alt .logo {
@@ -3120,9 +3140,13 @@ input, select, textarea {
 
 				#header.alt .logo img {
 					display: block;
+					border-radius: 50%;
+					width: 300px;
+					height: 300px;
 					margin: 0 auto;
 					max-width: 75%;
 				}
+
 
 		@media screen and (max-width: 1280px) {
 
