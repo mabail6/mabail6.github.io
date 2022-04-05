@@ -2878,29 +2878,91 @@ input, select, textarea {
 		display: -ms-flex;
 		display: flex;
 		width: 100%;
-		margin: 0 0 3em 0;
-		padding: 0;
 		list-style: none;
 		cursor: default;
+		padding: 0px;
+		margin: 0px;
 	}
 
 		.statistics li {
 			-moz-flex: 1;
 			-webkit-flex: 1;
 			-ms-flex: 1;
-			flex: 1;
-			padding: 1.5em;
+			display: flex;
+			justify-content: space-around;
+			margin: 10px;
+			padding: 10px 40px;
 			color: #ffffff;
 			text-align: center;
 		}
 
 			.statistics li.style1 {
-				background-color: #efa8b0;
+				/* background-color: #efa8b0; */
+				justify-content: center;
 			}
 
+				.statistics li.style1 div.polaroid {
+					display: block;
+					margin-left: auto;
+					margin-right: auto;
+					width: 400px;
+					background-color: white;
+					box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+				}
+
+				.statistics li.style1 img {
+					width: 100%;
+					height: 250px;	
+				}
+
+				.statistics li.style1 div.container {
+					text-align: center;
+					padding: 1px 10px;
+					margin: 1px;
+					color: black;
+				}
+
+					.statistics li.style1 div.container ul > li {
+						display: inline-block;
+						color: black;
+						font-size: 15px;
+						padding: 3px;
+						margin: 0px;
+					}
+
 			.statistics li.style2 {
-				background-color: #c79cc8;
+				/* background-color: #c79cc8; */
+				justify-content: center;
 			}
+
+				.statistics li.style2 div.polaroid {
+					display: block;
+					margin-left: auto;
+					margin-right: auto;
+					width: 400px;
+					background-color: white;
+					box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+				}
+
+				.statistics li.style2 img {
+					width: 100%;
+					height: 250px;
+				}
+
+				.statistics li.style2 div.container {
+					text-align: center;
+					padding: 1px 10px;
+					margin: 1px;
+					color: black;
+				}
+
+					.statistics li.style2 div.container ul > li {
+						display: inline-block;
+						color: black;
+						font-size: 15px;
+						padding: 3px;
+						margin: 0px;
+					}
 
 			.statistics li.style3 {
 				background-color: #a89cc8;
@@ -2941,6 +3003,7 @@ input, select, textarea {
 					font-size: 2.75rem;
 					line-height: 1.3;
 				}
+
 
 		@media screen and (max-width: 980px) {
 
